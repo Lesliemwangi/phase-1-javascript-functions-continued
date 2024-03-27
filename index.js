@@ -7,6 +7,8 @@ function saturdayFun(activity = 'roller-skate' ) {
     return `This Monday, I will ${activity}.`
   }
 
-  function wrapAdjective() {
-    
+  function wrapAdjective(parameterA = '*') {
+    return function(parameterB) {
+        return `You are ${parameterA}${parameterB}${parameterA}!`
+    }
   }
